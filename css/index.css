@@ -1,0 +1,355 @@
+
+
+/*下面   item部分  可重用*/
+.b-b-item{
+  margin-bottom: 20px;
+}
+   .body-header h3{
+    font-weight: 600;
+   }
+.b-b-textbox{
+  background: #ffffff;
+  width: 100%;
+  padding: 19px 20px 16px;
+}
+.b-b-textbox h4{
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+}
+.b-b-imgbox{
+  width: 100%;
+}
+.b-b-imgbox img{
+  width: 100%;
+}
+.b-b-textfoot{
+  display: flex;
+  justify-content: space-between;
+  margin-top:32px;
+}
+.b-b-textfoot span:last-child{
+  color:#9a9a9a;
+} 
+/*   上面  item部分  可重用*/
+
+.container-body{
+  width: 100%;
+  background:#000;
+}
+
+ .body-bannerbox .swiper-wrapper .swiper-slide img{
+    width:100%;
+  }
+  .body-addbtn{
+    display: block;
+    width: 200px;
+    height:50px;
+    background: #fff;
+    border:0;
+    margin: 50px auto;
+    font-weight: 700;
+    outline: none;
+    box-shadow: 0 0 2px #000;
+  }
+
+
+
+
+
+  .hoverbox{
+    width: 100%;
+    background-image: url(../images/Slice_2_44.jpg);
+   }
+  .hoverbox .mengban{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.7);
+   }
+   .hover-content{
+    padding: 20px 0;
+   }
+   .hover-content>h4{
+      color: #ffffff;
+      padding-left: 50px;
+   }
+   .hover-content h5{
+      padding-left: 50px;
+      color: #9a9a9a;
+   }
+    .imgbox{
+      display: inline-block;
+      position: relative;
+    }
+    .hover-item{
+      padding:50px 70px 0; 
+    }
+    .hover-item{
+      color: #ffffff;
+      text-align: center;
+    }
+    .hover-item h4{
+      font-weight: 700;
+      margin: 30px 0 10px;
+    }
+
+    .hover-item span{
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      background: rgba(250,250,250,.5);
+    }
+     .hover-item:hover span{
+      background: rgba(250,250,250,1);
+    }
+    .imgbox::after{
+      content: "";
+      display: block;
+      width: 95px;
+      height: 95px;
+      border: 1px solid #fff;
+      position: absolute;
+      border-radius: 50%;
+      top: 9px;
+      left: 9px;
+      transform: rotate(0deg);
+    }
+    @keyframes rotatea{
+
+    　　0%{transform:rotate(0deg);}
+
+    　　50%{transform:rotate(180deg);}
+
+    　　100%{transform:rotate(360deg);}
+
+    }
+
+    .hover-item:hover .imgbox::after{
+      border-style: dashed;
+      border-width: 1px;
+      animation: rotatea 10s linear infinite;
+    }
+    .hover-item:nth-child(1){
+      border-right:1px solid rgba(256,256,256,0.5);
+    }
+    .hover-item:nth-child(2){
+      border-right:1px solid rgba(256,256,256,0.5);
+    }
+    .hover-icon{
+      display: none;
+    }
+    .b-b-itemtop{
+      /*height:200px;*/
+      /*overflow: hidden;*/
+    }
+    .b-b-item{
+      padding: 0 10px;
+    }
+     .list-box{
+      display: flex;
+      flex-wrap: wrap;
+     }
+      .pingfang{
+        font-family: pingfang;
+        font-weight: 700;
+      }
+      .din{
+        font-family: DIN;
+        color:#9e9e9e;
+        font-weight: 700;
+      }
+@media (min-width: 768px){
+ .body-header{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 12px;
+  }
+   .body-header h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 23px 0 0;
+   }
+   .body-header h5{
+    color:#9e9e9e;
+    font-size: 14px;
+    margin:0px 0 17px; 
+    font-weight: 700;
+   }
+  .body-header h3{
+    text-align: center;
+    font-size: 23px;
+   }
+   .list-box{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+   }
+        
+    .body-bannerbox{
+      max-width:1000px;
+      width:90%;
+      margin: 0 auto;
+   }
+
+     .hover-content{
+        overflow: hidden;
+        max-width:1000px;
+        width:90%;
+        margin: 0 auto;
+      }
+    .hover-content>h4{
+     }
+     .hover-content>h5{
+     }
+    .b-b-itemtop{
+      width: 33.3333%;
+      padding:0 10px;
+    }
+}
+@media (max-width: 768px) and (min-width: 500px){
+   .body-header{
+    max-width: 768px;
+    width: 90%;
+    margin: 0 auto;
+  }
+   .body-header h4{
+    font-size: 18px;
+    font-weight: 700;
+   }
+   .body-header h5{
+    color:#9e9e9e;
+    font-size: 14px;
+   }
+   .body-header h3{
+    text-align: center;
+      font-size: 20px;
+   }
+
+
+
+
+   .hover-content{
+      overflow: hidden;
+      max-width:750px;
+      width:90%;
+      margin: 0 auto;
+      /*height: 500px; */
+   }
+   .hover-item:nth-child(1){
+      border-right:0px solid rgba(256,256,256,0.5);
+    }
+    .hover-item:nth-child(2){
+      border-right:0px solid rgba(256,256,256,0.5);
+    }
+    .b-b-itemtop{
+      width:50%;
+    }
+    .b-b-itemtop:nth-child(even){
+        padding-left:7px;
+      }
+       .b-b-itemtop:nth-child(odd){
+        padding-right:7px;
+      }
+
+}
+
+@media only screen and (max-width: 500px) {
+ .body-header{
+    max-width: 768px;
+    width: 90%;
+    margin: 0 auto;
+  }
+   .body-header h4{
+    font-size: 16px;
+    font-weight: 700;
+   }
+   .body-header h5{
+    color:#9e9e9e;
+    font-size: 13px;
+   }
+   .body-header h3{
+    text-align: center;
+      font-size: 18px;
+   }
+
+
+
+
+
+   .hover-content{
+      overflow: hidden;
+      max-width:500px;
+      width:90%;
+      margin: 0 auto;
+      /*height: 500px; */
+   }
+
+  .hover-item:nth-child(1){
+      border-right:0px solid rgba(256,256,256,0.5);
+    }
+    .hover-item:nth-child(2){
+      border-right:0px solid rgba(256,256,256,0.5);
+    }
+    .hover-item{
+      padding:10% 20px 0; 
+      display: flex;
+      justify-content: space-around;
+    }
+    .imgbox img{
+      width: 70px;
+     }
+      .imgbox::after{
+        display: block;
+        width: 58px;
+        height: 58px;
+        border: 1px solid #fff;
+        position: absolute;
+        border-radius: 50%;
+        top: 6px;
+        left: 6px;
+        transform: rotate(0deg);
+      }
+      .hover-text{
+        text-align: left;
+        padding-left:15px;
+      }
+      .hover-text h4{
+        margin-top:20px;
+      }
+      .hover-text p{
+        display: none;
+      }
+      .hover-icon{
+        display: block;       
+       margin-top:20px;
+        width: 20px;
+        height:20px;
+        background-image: url(../images/icon/xia.png)
+      }
+     .b-b-itemtop.b-b-textbox{
+        background: #ffffff;
+        width: 100%;
+        padding: 5px 10px 10px;
+      }
+     .b-b-itemtop .b-b-textbox h4{
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .b-b-itemtop{
+        width:50%;
+      }
+      .b-b-itemtop:nth-child(even){
+        padding-left:7px;
+      }
+       .b-b-itemtop:nth-child(odd){
+        padding-right:7px;
+      }
+      .b-b-textfoot{
+        margin-top:15px;
+      }
+      
+}
+

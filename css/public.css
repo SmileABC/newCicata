@@ -1,0 +1,172 @@
+@font-face {
+    /* font-properties */
+    font-family: pingfang;
+    src:url('../typeface/PingFang-SC-Regular.otf');
+}
+
+
+@font-face {
+    /* font-properties */
+    font-family: DIN;
+    src:url('../typeface/DIN Alternate.ttf'); 
+}
+.clear::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+body{
+  background-color:#f9f9f9;
+  font-family: pingfang;
+}
+
+.header{
+  height:48px;
+  background:#000000;
+  position: relative;
+  z-index: 99;
+}
+.header-nav{
+  min-height:48px;
+  /*max-width:1280px;*/
+  background:#000000;
+  color:#ffffff;
+  border: 0;
+}
+.navbar-toggle {
+  margin-bottom: 7px;
+  margin-top: 7px;
+  float: center;
+  margin-left: 10px;
+}
+.navbar-default .navbar-nav>li>a {
+  color:#ffffff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.header-nav>.container-fluid>.navbar-collapse>.nav>li:hover{
+  background: #282828;
+}
+.header-nav>.container-fluid>.navbar-collapse>.nav>li:hover a{
+  color:#ffffff;
+}
+.navbtn{
+  font-size: 20px;
+  color: #ffffff!important;;
+  font-weight: 700!important;
+  margin:0 auto;
+}
+.navlx{
+  float:left;
+  display: none;
+}
+
+.navbar-headerbox{
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px){
+  .container{
+    width: 1280px;
+  }
+  .navbar-nav {
+    float: right;
+    margin: 0;
+  }
+  .navbar{
+    height:48px;
+  }
+  .navlx{
+    float:left;
+    display: none;
+  }
+
+
+
+ .footer{
+      background: #ffffff;
+      color:#999999;
+      padding: 30px 10px 0;
+  }
+    
+  .max768{
+    padding-bottom: 30px;
+  }
+  .max768 ul{
+    list-style: none;
+    display: flex;
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .max768 ul li{
+    margin: 0 20px;
+  }
+  .max768 ul li:last-child{
+     margin-left: auto;
+  }
+
+
+}
+
+
+@media (max-width: 768px) and (min-width: 500px){
+  .header{
+    padding:0;
+  }
+
+.navlx{
+  float:left;
+  display: block;
+}
+
+
+  .footer{
+      background: #ffffff;
+      color:#999999;
+      padding: 30px 10px 0;
+  }
+    
+ .max768 ul{
+    list-style: none;
+  }
+  .max768 ul li{
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header{
+    padding:0;
+  }
+
+  .navlx{
+    float:left;
+    display: block;
+  }
+
+
+  .footer{
+      background: #ffffff;
+      color:#999999;
+      padding: 30px 10px 0;
+  }
+    
+  .min768{
+    display: none;
+  }
+  .max768{
+    display: block;
+  }
+  .max768 ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+  }
+  .max768 ul li{
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
